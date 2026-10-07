@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PromptNest
 
-## Getting Started
+PromptNest is a full-stack platform for discovering, sharing, and managing AI prompts.
 
-First, run the development server:
+I built PromptNest to create a simple place where users can share useful AI prompts, discover prompts from other users, search through them, and manage their own content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[View Live Demo](YOUR_VERCEL_URL)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Google Authentication
+- Create and share AI prompts
+- Edit and delete your own prompts
+- Search prompts by:
+  - Prompt content
+  - Tag
+  - Username
+- Click on a tag to find related prompts
+- View other users' profiles and their prompts
+- Copy prompts with one click
+- Responsive design
+- User profiles with their shared prompts
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js 16
+- React
+- Tailwind CSS
+- NextAuth / Auth.js
+- Google OAuth
+- MongoDB Atlas
+- Mongoose
+- JavaScript
+- Next.js App Router
+- Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How It Works
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Users can sign in with their Google account and start sharing AI prompts.
 
-## Deploy on Vercel
+Each prompt contains:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- The prompt itself
+- A tag
+- The user who created it
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Users can then search for prompts, filter them by tags, visit other users' profiles, copy prompts, and manage the prompts they created.
+
+## Authentication
+
+PromptNest uses Google OAuth for authentication through NextAuth.
+
+User information is stored in MongoDB, and each prompt is connected to its creator using a MongoDB reference.
+
+## Project Structure
+
+```text
+PromptNest
+├── app
+│   ├── api
+│   ├── profile
+│   ├── create-prompt
+│   └── update-prompt
+├── components
+├── models
+├── utils
+├── public
+├── next.config.ts
+├── package.json
+└── README.mdr [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
