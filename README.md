@@ -6,7 +6,7 @@ I built PromptNest to create a simple place where users can share useful AI prom
 
 ## Live Demo
 
-[View Live Demo]([YOUR_VERCEL_URL](https://prompt-nest-kappa.vercel.app/))
+[View Live Demo]([https://prompt-nest-kappa.vercel.app/]))
 
 ## Features
 
