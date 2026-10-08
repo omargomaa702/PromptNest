@@ -6,7 +6,7 @@ I built PromptNest to create a simple place where users can share useful AI prom
 
 ## Live Demo
 
-[View Live Demo]([https://prompt-nest-kappa.vercel.app/]))
+[View Live Demo](https://prompt-nest-kappa.vercel.app)
 
 ## Features
 
@@ -41,7 +41,6 @@ I built PromptNest to create a simple place where users can share useful AI prom
 Users can sign in with their Google account and start sharing AI prompts.
 
 Each prompt contains:
-
 - The prompt itself
 - A tag
 - The user who created it
@@ -69,4 +68,4 @@ PromptNest
 ├── public
 ├── next.config.ts
 ├── package.json
-└── README.mdr [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+└── README.md
